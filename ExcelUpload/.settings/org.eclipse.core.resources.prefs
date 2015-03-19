@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//ExcelUpload/controller/ProductController.php=UTF-8
+encoding//ExcelUpload/lib/ProductService.php=UTF-8
+encoding//ExcelUpload/lib/dao/ProductDao.php=UTF-8
+encoding//ExcelUpload/lib/model/brand/Brand.php=UTF-8
+encoding//ExcelUpload/lib/model/category/CategoryL.php=UTF-8
+encoding//ExcelUpload/lib/model/category/CategoryM.php=UTF-8
+encoding//ExcelUpload/lib/model/company/Company.php=UTF-8
+encoding//ExcelUpload/lib/model/product/Product.php=UTF-8
+encoding//ExcelUpload/productIndex.php=UTF-8
+encoding//ExcelUpload/tpl/templateExample.tpl.php=UTF-8
+encoding//ExcelUpload/util/template.php=UTF-8

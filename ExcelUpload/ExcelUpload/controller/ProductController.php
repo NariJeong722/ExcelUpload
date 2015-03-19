@@ -1,5 +1,5 @@
 <?php
-//ini_set('memory_limit',-1);
+ini_set('memory_limit',-1);
 header('Content-Type: text/html; charset=utf-8');
 require_once $_SERVER['DOCUMENT_ROOT'].'/ExcelUpload/ExcelUpload/lib/ProductService.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/ExcelUpload/ExcelUpload/exLib/PHPExcel.php';
@@ -94,15 +94,19 @@ print "</pre>";
 	echo 'CategoryNameL insert : ' . $bChkInCategoryL . '<br/>';	
 	
 	/*제조사 insert*/
+	$aCompanyList = array();
 	foreach (array_unique($aCompanyName) as $kCompanyName=>$vCompanyName){
 		$oCompany->setCompanyName($vCompanyName);
+		$aCompanyList[] = $vCompanyName;
 		$nChkInCompanyName = $oProductService->insertCompany($oCompany);		
 	}
 	echo 'CompanyName insert : ' . $nChkInCompanyName . '<br/>';
 	
 	/*브랜드 insert*/
+	$aBrandList = array();
 	foreach (array_unique($aBrandName) as $kBrandName=>$vBrandName){
 		$oBrand->setBrandName($vBrandName);
+		$aBrandList = $vBrandName;
 		$nChkInBrand= $oProductService->insertBrand($oBrand);		
 	} 
 	echo 'BrandName insert : ' . $nChkInBrand . '<br/>';
@@ -128,7 +132,10 @@ print "</pre>";
 	print_r($aCategoryListM);
 	
 	/*상품 insert*/
-	
+	for($i=0; $i<$maxRow; $i++){
+		
+		
+	}
 	
 	
 	
